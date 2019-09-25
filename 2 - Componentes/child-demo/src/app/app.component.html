@@ -1,0 +1,12 @@
+<h1>Componente padre</h1>
+<div>
+  <button (click)="userLoggedIn=true">Login</button>
+  <button (click)="userLoggedIn=false">Logout</button>
+  {{userLoggedIn}}
+</div>
+<app-child #child [loggedIn]="userLoggedIn"></app-child>
+<div>
+  {{child.name}}
+  <button (click)="child.greetMarc()">Greet</button>
+</div>
+

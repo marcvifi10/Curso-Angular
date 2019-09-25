@@ -1,0 +1,15 @@
+<mat-vertical-stepper labelPosition="bottom" linear>
+  <mat-step label="Shipping Address" completed="true">
+    <p>Detalles de la dirección de envío</p>
+  </mat-step>
+  <mat-step label="Billing Address" completed="false" optional>
+    <p>Detalles de la dirección de facturación</p>
+    <div>
+      <button mat-button matStepperPrevious>Anterior</button>
+      <button mat-button matStepperNext>Siguiente</button>
+    </div>
+  </mat-step>
+  <mat-step label="Place Order" completed="false">
+    <p>Detalles del pedido</p>
+  </mat-step>
+</mat-vertical-stepper>

@@ -1,0 +1,20 @@
+<h1>{{ pageTitle }}</h1>
+<div>
+  <img [src]="imgUrl" alt="Image">
+</div>
+<div>
+  <button (click)='incrementCounter()'>Click</button>
+  <p>Click¡ {{ count }} veces</p>
+</div>
+<div>
+  <input #nameRef type="text" [(ngModel)]='name'>
+  <p>Bienvenido {{ name }}</p>
+</div>
+<div>
+  <input type="text" [ngModel]='userName' (ngModelChange)='greetMarc($event)'>
+  <p>Bienvenido {{ userName }}</p>
+</div>
+<div>
+  <input type="text" [(ngModel)]='customerName'>
+  <p>Bienvenido {{ customerName }}</p>
+</div>
